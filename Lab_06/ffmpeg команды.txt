@@ -1,0 +1,4 @@
+Вырезание части видео файла
+ffmpeg -i input.mp4 -ss 00:00:13 -codec copy -t 10 result_video.mp4
+
+ffmpeg -i input.mp4 -i Ресурс_2.png -filter_complex "overlay=20:20" -codec:a copy result_video.mp4
